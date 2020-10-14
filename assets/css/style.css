@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: auto;
+  font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+}
+
+body{
+  background-image: url("../img/sfondo.jpg");
+}
+
+/* container */
+
+.container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 1000px;
+}
+
+/* classi Utility */
+
+.box_shadow{
+  box-shadow: 1px 2px 10px -1px black;
+}
+
+.float_left{
+  float: left;
+}
+
+
+/* header */
+
+header{
+  width: 100%;
+  height: 380px;
+  background-color: white;
+  background-image: url("../img/natural.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* nav_bar */
+
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: #504741;
+  text-align: center;
+  line-height: 50px;
+}
+
+ul.nav_bar{
+  width: 100%;
+  height: 100%;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  height: 100%;
+}
+
+nav ul li:hover{
+  background-color: #302b27;
+}
+
+nav li a{
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* main */
+
+main{
+  width: 100%;
+  margin-top: 10px;
+}
+
+main::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Colonna di sinistra */
+
+.left_side{
+  width: 20%;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.left_side::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.left_side i{
+  font-size: 30px;
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.left_side h3{
+  float: left;
+  font-size: 30px;
+  margin-left: 5px;
+  width: 70%;
+}
+
+.left_side li{
+  list-style: none;
+  margin-top: 5px;
+}
+
+.left_side li a{
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.left_side a:hover{
+  text-decoration: underline;
+  background-color: grey;
+}
+
+/* Colonna Centrale */
+
+.central_column{
+  width: 52%;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20PX;
+  margin: 0 4%;
+}
+
+.central_column h1{
+  text-shadow:  7px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Colonna di Destra */
+
+.right_side{
+  width: 20%;
+}
+
+.text_widget{
+  width: 100%;
+  height: 380px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20PX;
+  margin-bottom: 40px;
+}
+
+.central_column p, .text_widget p{
+  margin-top: 40px;
+}
+
+/* Footer */
+
+footer{
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer .top span{
+  color: grey;
+  font-style: oblique;
+}
+
+footer .bottom i{
+  color: grey;
+  margin: 45px 85px;
+  font-size: 50px;
+  vertical-align: middle;
+}
+
+footer .bottom i:hover{
+  cursor: pointer;
+  color: blue;
+}
